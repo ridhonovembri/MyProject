@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <img style="width:100%" src="{% static banner %}" />
+    {{title}}
+    <ul>
+        {% for link, name in nav%}
+        <li>
+            <a href="{{link}}">{{name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block header %}
+    <img id='banner' src="{% static banner %}" />
+{% endblock header %}
+
+{% block title %}
+    <h1>{{title}}</h1>
+{% endblock title %}
+
+{% block jumbotron %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{title}}</h1>
+      <p class="lead"></p>
+    </div>
+</div>
+{% endblock jumbotron %}
+
+
+
